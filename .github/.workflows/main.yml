@@ -11,5 +11,6 @@ jobs:
         run: echo Hello, world!
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git checkout -b gh-pages,
+          git merge master,
+          git push origin gh-pages.
